@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New, Limited, & Bestseller Flowers - Fleuré Style</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://bloomthis.co/cdn/shop/collections/bloomthis-bestsellers.jpg?v=1562502188&width=2000') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(213,200,181,255);
+      padding: 10px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #c2185b;
+    }
+
+    header nav a {
+      text-decoration: none;
+      color: #c2185b;
+      font-weight: 600;
+      margin-left: 20px;
+    }
+
+    .hero-banner {
+      background: url('https://bloomthis.co/cdn/shop/collections/bloomthis-bestsellers.jpg?v=1562502188&width=2000') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5em;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .hero-text p {
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px 0;
+      background: #fff;
+    }
+
+    .tab-button {
+      padding: 10px 20px;
+      border: none;
+      background: #f8bbd0;
+      color: #c2185b;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .tab-button.active, .tab-button:hover {
+      background: #f06292;
+      color: white;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      background: #fce7f3;
+      padding: 50px 20px;
+    }
+
+    .flower-card {
+      width: 240px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .flower-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .flower-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-details {
+      padding: 15px;
+    }
+
+    .badge {
+      background: #f2c4d7;
+      color: #b71c5a;
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 15px;
+      font-size: 0.75em;
+      margin-bottom: 8px;
+    }
+
+    .card-details h3 {
+      font-size: 1.1em;
+      color: #333;
+      margin: 5px 0;
+    }
+
+    .rating {
+      color: #f9a825;
+      font-size: 0.9em;
+      margin: 5px 0;
+    }
+
+    .price {
+      margin: 10px 0;
+    }
+
+    .new-price {
+      font-weight: bold;
+      color: #c2185b;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: #999;
+      margin-left: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Menu -->
+  <header>
+<div class="logo"><a href="index.html" style="text-decoration: none; color: #c2185b;">Fleuré</a></div>
+    <nav>
+      <a class="button" href="Flowers.html">Flowers</a>
+      <a href="Sale.html" class="dropdown-toggle">Sale</a>
+      <a class="button" href="Special.html">Special</a>
+      <a href="Occasion.html" class="dropbtn">Occasion</a>
+      <a class="button" href="Location.html">Location</a>
+      <a class="button" href="Order.html">Order</a>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero-banner">
+    <div class="hero-text">
+      <h1>New, Limited, & Bestseller Flowers </h1>
+      <p>🎁 Free card & photo + same-day delivery</p>
+    </div>
+  </section>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-button active" onclick="showTab(event, 'new')">New</button>
+    <button class="tab-button" onclick="showTab(event, 'limited')">Limited</button>
+    <button class="tab-button" onclick="showTab(event, 'bestseller')">Bestseller</button>
+  </div>
+
+
+  <!-- NEW -->
+  <div id="new" class="tab-content active">
+    <div class="flower-card"><img src="Lavender Baby Breath.png" alt="Lavender Baby Breath"><div class="card-details"><div class="badge">New</div><h3>Lavender Baby Breath</h3><div class="rating">⭐⭐⭐⭐⭐</div><p class="price"><span class="new-price">RM89</span> <span class="old-price">RM99</span></p></div></div>
+    <div class="flower-card"><img src="Mini Eustoma.webp" alt="Mini Eustoma"><div class="card-details"><div class="badge">New</div><h3>Mini Eustoma</h3><div class="rating">⭐⭐⭐⭐⭐</div><p class="price"><span class="new-price">RM75</span> <span class="old-price">RM85</span></p></div></div>
+    <div class="flower-card"><img src="https://www.wenghoa.com/wp-content/uploads/2024/03/3-28.jpg" alt="Purple Lily"><div class="card-details"><div class="badge">New</div><h3>Purple Lily</h3><div class="rating">⭐⭐⭐⭐⭐</div><p class="price"><span class="new-price">RM108</span> <span class="old-price">RM120</span></p></div></div>
+  </div>
+
+  <!-- LIMITED -->
+  <div id="limited" class="tab-content">
+    <div class="flower-card"><img src="Colourful Baby Breath.jpg" alt="Colourful Baby Breath"><div class="card-details"><div class="badge">Limited</div><h3>Colourful Baby Breath</h3><div class="rating">⭐⭐⭐⭐</div><p class="price"><span class="new-price">RM88</span> <span class="old-price">RM95</span></p></div></div>
+    <div class="flower-card"><img src="Pink Baby Breath.jpg" alt="Pink Baby Breath"><div class="card-details"><div class="badge">Limited</div><h3>Pink Baby Breath</h3><div class="rating">⭐⭐⭐⭐</div><p class="price"><span class="new-price">RM79</span></p></div></div>
+    <div class="flower-card"><img src="Ashley Red Rose.webp" alt="Ashley Red Rose"><div class="card-details"><div class="badge">Limited</div><h3>Ashley Red Rose</h3><div class="rating">⭐⭐⭐⭐⭐</div><p class="price"><span class="new-price">RM99</span></p></div></div>
+    <div class="flower-card"><img src="https://bloomthis.co/cdn/shop/products/bloomthis-bouquet-sylvie-gerbera-bouquet-1080x1080-03.jpg?v=1608280887&width=600" alt="Sylvie Gerbera"><div class="card-details"><div class="badge">Limited</div><h3>Sylvie Gerbera</h3><div class="rating">⭐⭐⭐⭐</div><p class="price"><span class="new-price">RM105</span></p></div></div>
+    <div class="flower-card"><img src="https://bloomthis.co/cdn/shop/files/bloomthis-bouquet-boujee-blue-hydrangea-bouquet-1080x1350-03.jpg?v=1717559161&width=600" alt="Boujee Blue Hydrangea"><div class="card-details"><div class="badge">Limited</div><h3>Boujee Blue Hydrangea</h3><div class="rating">⭐⭐⭐⭐⭐</div><p class="price"><span class="new-price">RM125</span></p></div></div>
+    <div class="flower-card"><img src="https://bloomthis.co/cdn/shop/products/bloomthis-hat-box-erica-hydrangea-rose-flower-box-1080x1080-04.jpg?v=1675159494&width=600" alt="Erica Hydrangea"><div class="card-details"><div class="badge">Limited</div><h3>Erica Hydrangea</h3><div class="rating">⭐⭐⭐⭐</div><p class="price"><span class="new-price">RM112</span></p></div></div>
+    <div class="flower-card"><img src="https://bloomthis.co/cdn/shop/products/bloomthis-hat-box-yara-gerbera-lily-flower-box-1080x1080-04.jpg?v=1675853185&width=600" alt="Yara Gerbera Lily"><div class="card-details"><div class="badge">Limited</div><h3>Yara Gerbera Lily</h3><div class="rating">⭐⭐⭐⭐</div><p class="price"><span class="new-price">RM118</span></p></div></div>
+    <div class="flower-card"><img src="https://fluffyflower.eu/cdn/shop/files/IMG_8117.heic?v=1732235216&width=3024" alt="StoX Yellow Matthiola"><div class="card-details"><div class="badge">Limited</div><h3>StoX Yellow Matthiola</h3><div class="rating">⭐⭐⭐⭐⭐</div><p class="price"><span class="new-price">RM130</span></p></div></div>
+    <div class="flower-card"><img src="https://bloomthis.co/cdn/shop/products/bloomthis-vase-raquel-1080x1080-04.jpg?v=1586936489&width=600" alt="Raquel Orchid"><div class="card-details"><div class="badge">Limited</div><h3>Raquel Orchid</h3><div class="rating">⭐⭐⭐⭐</div><p class="price"><span class="new-price">RM115</span></p></div></div>
+    <div class="flower-card"><img src="https://bloomthis.co/cdn/shop/products/bloomthis-vase-lola-1080x1080-01.jpg?v=1586936484&width=600" alt="Lola Orchid"><div class="card-details"><div class="badge">Limited</div><h3>Lola Orchid</h3><div class="rating">⭐⭐⭐⭐</div><p class="price"><span class="new-price">RM118</span></p></div></div>
+  </div>
+
+  <!-- BESTSELLER -->
+  <div id="bestseller" class="tab-content">
+    <div class="flower-card">
+      <img src="https://bloomthis.co/cdn/shop/files/bloomthis-bouquet-beatrice-rose-lily-bouquet-1080x1080-01.jpg?v=1743038737&width=700" alt="Beatrice Rose Lily">
+      <div class="card-details">
+        <div class="badge">Bestseller</div>
+        <h3>Beatrice Rose Lily</h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="price"><span class="new-price">RM129</span> <span class="old-price">RM139</span></p>
+      </div>
+    </div>
+
+    <div class="flower-card">
+      <img src="https://bloomthis.co/cdn/shop/files/bloomthis-bouquet-mimmie-pink-carnation-bouquet-1080x1080-01.jpg?v=1743038933&width=600" alt="Mimmie Pink Carnation">
+      <div class="card-details">
+        <div class="badge">Bestseller</div>
+        <h3>Mimmie Pink Carnation</h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="price"><span class="new-price">RM119</span></p>
+      </div>
+    </div>
+
+    <div class="flower-card">
+      <img src="Mischa Pink Carnation.webp" alt="Mischa Pink Carnation">
+      <div class="card-details">
+        <div class="badge">Bestseller</div>
+        <h3>Mischa Pink Carnation</h3>
+        <div class="rating">⭐⭐⭐⭐</div>
+        <p class="price"><span class="new-price">RM99</span></p>
+      </div>
+    </div>
+
+    <div class="flower-card">
+      <img src="Red Eustoma.webp" alt="Red Eustoma">
+      <div class="card-details">
+        <div class="badge">Bestseller</div>
+        <h3>Red Eustoma</h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="price"><span class="new-price">RM89</span> <span class="old-price">RM98</span></p>
+      </div>
+    </div>
+
+    <div class="flower-card">
+      <img src="https://bloomthis.co/cdn/shop/products/bloomthis-bouquet-freye-gerbera-rose-bouquet-1080x1080-08.jpg?v=1708659926&width=600" alt="Freye Gerbera">
+      <div class="card-details">
+        <div class="badge">Bestseller</div>
+        <h3>Freye Gerbera</h3>
+        <div class="rating">⭐⭐⭐⭐</div>
+        <p class="price"><span class="new-price">RM109</span></p>
+      </div>
+    </div>
+
+    <div class="flower-card">
+      <img src="https://grannydoris.my/cdn/shop/products/Tomorrow-HydrangeaBouquet.jpg?v=1636460918&width=600" alt="Blue Hydrangea">
+      <div class="card-details">
+        <div class="badge">Bestseller</div>
+        <h3>Blue Hydrangea</h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="price"><span class="new-price">RM135</span></p>
+      </div>
+    </div>
+
+    <div class="flower-card">
+      <img src="https://onlyloveflorist.com/5934-thickbox_default/hgb004-hydrangea-bouquet.jpg" alt="Pink Hydrangea">
+      <div class="card-details">
+        <div class="badge">Bestseller</div>
+        <h3>Pink Hydrangea</h3>
+        <div class="rating">⭐⭐⭐⭐</div>
+        <p class="price"><span class="new-price">RM128</span></p>
+      </div>
+    </div>
+
+    <div class="flower-card">
+      <img src="https://bloomthis.co/cdn/shop/products/bloomthis-bouquet-sadie-black-1080x1080-02.jpg?v=1571562322&width=600" alt="Sadie Black Sunflower">
+      <div class="card-details">
+        <div class="badge">Bestseller</div>
+        <h3>Sadie Black Sunflower</h3>
+        <div class="rating">⭐⭐⭐⭐</div>
+        <p class="price"><span class="new-price">RM105</span></p>
+      </div>
+    </div>
+
+    <div class="flower-card">
+      <img src="https://bloomthis.co/cdn/shop/products/bloomthis-bouquet-julia-white-1080x1080-06.jpg?v=1571562321&width=600" alt="Julie White Sunflower">
+      <div class="card-details">
+        <div class="badge">Bestseller</div>
+        <h3>Julie White Sunflower</h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="price"><span class="new-price">RM102</span></p>
+      </div>
+    </div>
+
+    <div class="flower-card">
+      <img src="https://bloomthis.co/cdn/shop/products/bloomthis-bouquet-kirsten-1080x1080-04.jpg?v=1598857378&width=600" alt="Kristen Orange Tulip">
+      <div class="card-details">
+        <div class="badge">Bestseller</div>
+        <h3>Kristen Orange Tulip</h3>
+        <div class="rating">⭐⭐⭐⭐</div>
+        <p class="price"><span class="new-price">RM110</span></p>
+      </div>
+    </div>
+
+    <div class="flower-card">
+      <img src="https://bloomthis.co/cdn/shop/products/bloomthis-bouquet-constance-1080x1080-04.jpg?v=1598857372&width=600" alt="Constance Tulip">
+      <div class="card-details">
+        <div class="badge">Bestseller</div>
+        <h3>Constance Tulip</h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="price"><span class="new-price">RM112</span></p>
+      </div>
+    </div>
+
+    <div class="flower-card">
+      <img src="https://bloomthis.co/cdn/shop/files/bloomthis-mini-bloombag-mirae-pink-tulip-mini-bloombag-1080x1350-03-vase.jpg?v=1749451758&width=600" alt="Mirae Pink Mini Tulip">
+      <div class="card-details">
+        <div class="badge">Bestseller</div>
+        <h3>Mirae Pink Mini Tulip</h3>
+        <div class="rating">⭐⭐⭐⭐</div>
+        <p class="price"><span class="new-price">RM98</span></p>
+      </div>
+    </div>
+
+    <div class="flower-card">
+      <img src="https://bloomthis.co/cdn/shop/files/bloomthis-bouquet-real-talk-pink-tulip-bouquet-1080x1350-03.jpg?v=1717600269&width=600" alt="Real Talk Pink Tulip">
+      <div class="card-details">
+        <div class="badge">Bestseller</div>
+        <h3>Real Talk Pink Tulip</h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="price"><span class="new-price">RM109</span></p>
+      </div>
+    </div>
+  </div>
+  <script>
+    function showTab(event, tabId) {
+      const contents = document.querySelectorAll('.tab-content');
+      const buttons = document.querySelectorAll('.tab-button');
+      contents.forEach(tab => tab.classList.remove('active'));
+      buttons.forEach(btn => btn.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>

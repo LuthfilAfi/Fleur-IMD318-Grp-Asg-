@@ -1,0 +1,60 @@
+ <section>
+    <div class="sale-grid">
+
+      <!-- Product 1 -->
+      <div class="sale-card">
+        <div class="sale-image">
+          <img src="https://down-my.img.susercontent.com/file/my-11134207-7rasl-m2xblhsv4m5xf3.webp" alt="You & Bloom" class="sale-main-img">
+          <div class="promo-banner"> USE CODE ONSALE10</div>
+        </div>
+
+        <div class="sale-content">
+          <div class="bestseller">Bestseller</div>
+          <h3>You & Bloom</h3>
+          <div class="stars">★★★★★ 96 Reviews</div>
+          <div class="prices">
+            <span class="sale-price">RM112</span>
+            <span class="old-price">RM130</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="sale-card">
+        <div class="sale-image">
+          <img src="https://i.pinimg.com/736x/40/9d/2e/409d2efc5fa7418593e8466d9980d2e2.jpg" alt="Mid-Month Mekar" class="sale-main-img">
+          <div class="promo-banner"> USE CODE ONSALE15</div>
+        </div>
+
+        <div class="sale-content">
+          <div class="bestseller">Bestseller</div>
+          <h3>Mid-Month Mekar</h3>
+          <div class="stars">★★★★☆ 45 Reviews</div>
+          <div class="prices">
+            <span class="sale-price">RM149.60</span>
+            <span class="old-price">RM170</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="sale-card">
+        <div class="sale-image">
+          <img src="https://i.pinimg.com/736x/b6/56/aa/b656aa02513652d9313e554de910a377.jpg" alt="Bouquet Bonus" class="sale-main-img">
+          <div class="promo-banner">USE CODE ONSALE12</div>
+        </div>
+
+        <div class="sale-content">
+          <div class="bestseller">Bestseller</div>
+          <h3>Bouquet Bonus</h3>
+          <div class="stars">★★★★★ 80 Reviews</div>
+          <div class="prices">
+            <span class="sale-price">RM135.00</span>
+            <span class="old-price">RM150</span>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
